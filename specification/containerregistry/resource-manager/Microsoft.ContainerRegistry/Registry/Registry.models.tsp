@@ -311,6 +311,7 @@ model RegistryProperties {
   /**
    * Whether to allow trusted Azure services to access a network restricted registry.
    */
+  @added(Versions.v2025_11_01)
   networkRuleBypassOptions?: NetworkRuleBypassOptions = NetworkRuleBypassOptions.AzureServices;
 
   /**
@@ -666,6 +667,7 @@ model RegistryPropertiesUpdateParameters {
   /**
    * Whether to allow trusted Azure services to access a network restricted registry.
    */
+  @added(Versions.v2025_11_01)
   networkRuleBypassOptions?: NetworkRuleBypassOptions = NetworkRuleBypassOptions.AzureServices;
 
   /**

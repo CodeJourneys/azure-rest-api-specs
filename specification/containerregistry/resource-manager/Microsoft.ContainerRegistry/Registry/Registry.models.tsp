@@ -316,6 +316,7 @@ model RegistryProperties {
   /**
    * Whether or not Tasks allowed to bypass the network rules for this container registry.
    */
+  @added(Versions.v2025_11_01)
   networkRuleBypassAllowedForTasks?: boolean = false;
 
   /**
@@ -670,6 +671,7 @@ model RegistryPropertiesUpdateParameters {
   /**
    * Whether to allow ACR Tasks service to access a network restricted registry.
    */
+  @added(Versions.v2025_11_01)
   networkRuleBypassAllowedForTasks?: boolean;
 
   /**
